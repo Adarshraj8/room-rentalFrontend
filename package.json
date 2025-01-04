@@ -1,0 +1,30 @@
+{
+  "name": "room-rent",
+  "version": "1.0.0",
+  "description": "room rent project by Adarsh raj",
+  "scripts": {
+    "start": "parcel index.html --port 5000",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adarshraj8/room-rentalService.git"
+  },
+  "author": "adarsh raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adarshraj8/room-rentalService/issues"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.28.0"
+  }
+}

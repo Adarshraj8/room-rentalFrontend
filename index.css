@@ -1,0 +1,572 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border: none;
+    position: relative;
+    margin: 4rem 0;
+
+}
+a {
+  text-decoration: none;
+}
+
+
+.logo{
+    width: 120px;
+    padding-left: 20px;
+}
+ul{
+    padding-right: 20px;
+}
+.room-detail p{
+  font-size: 3rem;
+}
+.room-detail h1{
+  font-size: 4rem;
+}
+.nav-items >ul{
+    display: flex;
+    font-size: 24px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-items ul li{
+    padding: 10px;
+    margin: 10px;
+}
+button {
+  margin: 1em;
+  padding: 1rem;
+  font-size: 16px; /* Set a default font size */
+}
+.room-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.room-card{
+    
+    flex-wrap: wrap;
+    width: 200px;
+    margin:10px ;
+    padding: 20px;
+    border: none;
+    background-color:#f0f0f0;
+}
+
+.room-logo{
+    width: 200px;
+  position: relative;
+}
+.room-logo:hover{
+    transform: scale(1.2);
+    border-radius: 5px;
+
+}
+.room-card:hover{
+    transform: scale(1);
+    border-radius: 5px;
+    box-shadow: inset;
+    cursor: pointer;
+    border: 1px solid black;
+}
+footer {
+    position: relative;
+    margin-top: -1px;
+    background: #343d68;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    padding: 5rem;
+  }
+  .link-wrapper {
+    display: flex;
+    gap: 1.2rem;
+  }
+.footer-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .link-wrapper {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .link-wrapper div a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+  
+  .link-wrapper div a:hover {
+    color: var(--bgOrange);
+    text-decoration: none;
+  }
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 2rem; /* Space between icons */
+}
+
+.icon-wrapper a {
+    color: #fff;
+    font-size: 2rem; /* Adjust icon size */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-wrapper a:hover {
+    color: #1e90ff; /* Hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+  @media (max-width: 1300px) {
+    footer {
+      padding: 0.5rem;
+    }
+    .footer-wrapper {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .footer-faded-text {
+      display: none;
+    }
+  }
+  /* Footer End */
+  .shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .shimmer-card {
+    width: 200px;
+    height: 400px;
+    padding: 16px;
+    background: #f6f6f6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shimmer-image {
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(90deg, #ececec 25%, #f5f5f5 50%, #ececec 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+  }
+  
+  .shimmer-content {
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+  .shimmer-title,
+  .shimmer-subtitle {
+    height: 20px;
+    background: linear-gradient(90deg, #ececec 25%, #f5f5f5 50%, #ececec 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+  }
+  
+  .shimmer-title {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .shimmer-subtitle {
+    width: 60%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .room-card-single{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 2px;
+    justify-content: center;
+  }
+
+  .room-detail{
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+  .room-logo-single{
+    width: 80vw;
+    margin: 8rem 2rem;
+
+  }
+  .room-logo-single:hover{
+    transform: scale(1.1);
+  }
+
+  .room-detail p{
+    font-size: 25px;
+  }
+
+  .about-us{
+    font-size: 1.5rem;
+    background-color: rgb(252, 252, 243);
+    margin: 5rem 8rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-us{
+    font-size: 2rem;
+    position: relative;
+  }
+  .icon{
+    height: 5rem;
+  }
+  .copyright {
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+
+}
+
+@media(max-width: 768px){
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    flex-direction: column;
+  }
+  .logo {
+    width: 100px;  /* Adjust logo size */
+    padding-left: 0;  /* Remove left padding */
+}
+.nav-items > ul {
+  flex-direction: column;  /* Stack nav items vertically */
+  font-size: 18px;  /* Smaller font size */
+  gap: 10px;  /* Reduce gap between items */
+}
+.nav-items button {
+  padding: 0.5rem;   /* Decrease padding */
+  font-size: 1rem;    /* Adjust font size */
+  width: 4rem;        /* Ensure button width is auto */
+  margin: 0.5rem;     /* Adjust margin for small screens */
+}
+.nav-items ul li {
+  padding: 5px;  /* Smaller padding */
+  margin: 5px;  /* Adjust margins */
+}
+.room-container {
+  flex-direction: column;  /* Stack room cards vertically */
+  align-items: center;  /* Center room cards */
+}
+.room-card {
+  flex: 1 1 100%; 
+  margin: 10px 0;  /* Adjust margin */
+}
+.footer-wrapper {
+  flex-direction: column;  /* Stack footer items vertically */
+  align-items: center;  /* Center footer items */
+  gap: 10px;  /* Add space between footer items */
+}
+.icon-wrapper {
+  justify-content: center;  /* Center icons */
+  gap: 15px;  /* Adjust space between icons */
+}
+.shimmer-card {
+  width: 100%;  /* Make shimmer card responsive */
+  margin-bottom: 20px;  /* Adjust margin */
+}
+.room-logo-single {
+  width: 100%; /* Make image fill full width */
+    height: 200px; /* Fix height for consistency */
+    object-fit: cover;  /* Make room logo responsive */
+}
+.room-detail p {
+  font-size: 16px;  /* Smaller font size for details */
+}
+.about-us, .contact-us {
+  font-size: 1.4rem;  /* Adjust font size for better readability */
+}
+.copyright {
+  font-size: 0.9rem;  /* Smaller font size for mobile */
+}
+}
+
+@media(max-width: 1024px) {
+  .room-container {
+      flex-direction: row;  /* Allow room cards to be in a row */
+      justify-content: space-evenly;  /* Evenly space room cards */
+  }
+
+  .room-card {
+  margin: 10px;  
+  }
+  .footer-wrapper {
+    flex-direction: row;  /* Arrange footer items in a row */
+    justify-content: space-between;  /* Space footer items evenly */
+}
+.icon-wrapper {
+  gap: 20px;  /* Increase space between icons */
+}
+.room-logo-single {
+  width: 100vw;
+  height: 200px; /* Keep image height consistent */
+  object-fit: cover;  /* Make room logo responsive */
+}
+
+.room-detail p {
+  font-size: 18px;  /* Adjust font size for tablets */
+}
+}
+/* Center the contact-us section */
+.contact-us-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Full viewport height */
+  font-size: 1rem;
+  margin: 3rem 5rem;
+}
+.support p{
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+}
+.ai{
+  color: white;
+}
+/* Contact-us form styling */
+.contact-us {
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  padding: 3rem;
+  margin: 3rem 3rem;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80vh;
+  max-width: 600px; /* Maximum width */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .contact-us {
+    width: 80vw;
+    max-width: 80vh;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+form {
+  width: 30vw;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 30vw;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-top: 4px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  background-color: #fff;
+}
+textarea {
+  resize: vertical;
+  min-height: 1em;
+}
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30vw;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+button:active {
+  background-color: #388e3c;
+}
+
+button:focus {
+  outline: none;
+}
+/* Responsive Design */
+@media (max-width: 480px) {
+  .contact-us {
+    width: 12vw;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+
+.pay_us {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pay_us h3 {
+  margin-bottom: 15px;
+}
+
+.pay_us input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.pay_us .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.download_pdf {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.head_pdf {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.download_pdf input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+.order_room {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.table_main {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table_head th,
+.table_body td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .download_pdf {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
