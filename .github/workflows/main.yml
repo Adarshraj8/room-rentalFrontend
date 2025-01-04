@@ -23,12 +23,7 @@ jobs:
 
       - name: Build Application
         run: npm run build
-
-      - name: Install AWS CLI
-        run: |
-          sudo apt update
-          sudo apt install -y awscli
-
+        
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
