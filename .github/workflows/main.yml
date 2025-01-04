@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # Updated to the latest version of checkout action
+        uses: actions/checkout@v1  # Updated to the latest version of checkout action
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3  # Updated to the latest version of setup-node action
+        uses: actions/setup-node@v1  # Updated to the latest version of setup-node action
         with:
           node-version: ${{ secrets.node_version }}
 
@@ -32,4 +32,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: Deploy to AWS S3
-        run: aws s3 sync build/ s3://room-rent-app --delete --exact-timestamps --debug  # Added '--debug' for better troubleshooting and '--exact-timestamps' to avoid overwriting unnecessarily
+        run: aws s3 sync . s3://room-rent-app --delete --exact-timestamps --debug  # Added '--debug' for better troubleshooting and '--exact-timestamps' to avoid overwriting unnecessarily
