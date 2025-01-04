@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3  # Updated to the latest version of checkout action
 
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3  # Updated to the latest version of setup-node action
         with:
           node-version: ${{ secrets.node_version }}
 
@@ -23,13 +23,13 @@ jobs:
 
       - name: Build Application
         run: npm run build
-        
+
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1  # This is fine, but always ensure you're using the latest release (v1 or v2 as available)
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
       - name: Deploy to AWS S3
-        run: aws s3 sync build s3://room-rent-app --delete
+        run: aws s3 sync build/ s3://room-rent-app --delete --exact-timestamps --debug  # Added '--debug' for better troubleshooting and '--exact-timestamps' to avoid overwriting unnecessarily
