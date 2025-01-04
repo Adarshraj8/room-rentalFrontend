@@ -16,13 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{secrets.node_version}}  # Adjust according to your project requirements
+          node-version: ${{ secrets.node_version }}
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Application
-        run: npm run build  # Ensure this creates the build directory
+        run: npm run build
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -32,4 +32,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: Deploy to AWS S3
-        run: aws s3 sync ./build/ s3://room-rent-app --delete --exact-timestamps  # Sync only the 'build' directory
+        run: aws s3 sync ./dist/ s3://room-rent-app --delete --exact-timestamps  # Updated to use the correct directory
